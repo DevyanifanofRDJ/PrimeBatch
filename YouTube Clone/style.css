@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside{
+    background-color: lightskyblue;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6.25rem auto;
+    grid-template-columns: 13rem 1fr;  /* 1fr means 1 fraction of the remaining space*/
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: yellow;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    gap: 2rem;
+    padding: 2rem;
+    grid-auto-rows: auto;
+    background-color: blue;
+}
+
+.card{
+    background-color: brown;
+}
